@@ -1,0 +1,11 @@
+displayName: Request Policy Plugin
+type: middleware
+import: github.com/alexkachalkov/requestpolicy
+summary: '[Request Policy] Middleware Plugin'
+testData:
+  whitelistPaths:
+    - pathRegex: "^/foo$"
+      queryParamRegex: ""
+  blacklistPaths:
+    - pathRegex: "^/bar$"
+      queryParamRegex: "^baz=.*$"
